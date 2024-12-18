@@ -20,6 +20,11 @@ public class FlyAtPlayer : MonoBehaviour
             positionToMoveTo,
             moveTowardsSpeed * Time.deltaTime
             );
+
+        if (transform.position == positionToMoveTo)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void MoveTowardsObject(Vector3 positionToMoveTo)
