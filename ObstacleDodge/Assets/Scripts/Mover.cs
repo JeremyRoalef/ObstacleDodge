@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    //[Header("Movement Attributes")]
+    [Header("Movement Attributes")]
 
     [SerializeField]
     [Min(0)]
