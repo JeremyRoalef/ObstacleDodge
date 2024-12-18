@@ -2,16 +2,7 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    [Header("Movement Attributes")]
-
-    [SerializeField]
-    float xValue = 0f;
-
-    [SerializeField]
-    float yValue = 0f;
-
-    [SerializeField]
-    float zValue = 0f;
+    //[Header("Movement Attributes")]
 
 
     void Start()
@@ -21,8 +12,9 @@ public class Mover : MonoBehaviour
 
     void Update()
     {
+        float xValue = Input.GetAxis("Horizontal");
+        float zValue = Input.GetAxis("Vertical");
 
-
-        transform.Translate(xValue,yValue,zValue);
+        transform.Translate(xValue, 0, zValue);
     }
 }
