@@ -7,7 +7,12 @@ public class Scorer : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        score++;
-        Debug.Log($"Objects hit: {score}");
+        if (other.gameObject.TryGetComponent<ObjectHit>(out ObjectHit objectHit))
+        {
+            if (objectHit.IsHit) { return; }
+
+            score++;
+            Debug.Log($"Objects hit: {score}");
+        }
     }
 }

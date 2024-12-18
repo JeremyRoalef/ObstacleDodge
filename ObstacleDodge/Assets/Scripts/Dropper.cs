@@ -20,7 +20,7 @@ public class Dropper : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"Elapsed Time: {Time.time}");
+        //Debug.Log($"Elapsed Time: {Time.time}");
         if (Time.time >= dropWaitTimer)
         {
             DropObject();
@@ -31,5 +31,13 @@ public class Dropper : MonoBehaviour
     {
         rb.useGravity = true;
         meshRenderer.enabled = true;
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+
+        }
     }
 }
