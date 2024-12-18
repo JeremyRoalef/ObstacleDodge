@@ -766,6 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36cffce1e4e9cc547a730a0f91f0d048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitColor: {r: 0.9029649, g: 0.37846637, b: 0.48967502, a: 1}
 --- !u!1 &1194355074
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,6 +888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36cffce1e4e9cc547a730a0f91f0d048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitColor: {r: 0.9029649, g: 0.37846637, b: 0.48967502, a: 1}
 --- !u!1 &1388881039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,6 +1010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36cffce1e4e9cc547a730a0f91f0d048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitColor: {r: 0.9029649, g: 0.37846637, b: 0.48967502, a: 1}
 --- !u!1 &1666922897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1347,6 +1350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36cffce1e4e9cc547a730a0f91f0d048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitColor: {r: 0.9029649, g: 0.37846637, b: 0.48967502, a: 1}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
