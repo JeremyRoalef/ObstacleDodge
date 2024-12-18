@@ -6,11 +6,15 @@ public class Dropper : MonoBehaviour
     float dropWaitTimer;
 
     Rigidbody rb;
+    MeshRenderer meshRenderer;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
+
+        meshRenderer = GetComponent<MeshRenderer>();
+        meshRenderer.enabled = false;
     }
 
 
@@ -26,5 +30,6 @@ public class Dropper : MonoBehaviour
     void DropObject()
     {
         rb.useGravity = true;
+        meshRenderer.enabled = true;
     }
 }
