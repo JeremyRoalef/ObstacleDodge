@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-
+    float xValue = 0.01f;
+    float yValue = 0.01f;
+    float zValue = 0.01f;
 
 
     void Start()
@@ -14,6 +16,6 @@ public class Mover : MonoBehaviour
     {
 
 
-        transform.Translate(0,0,0.01f);
+        transform.Translate(xValue,yValue,zValue);
     }
 }
