@@ -7,8 +7,9 @@ public class FlyAtPlayer : MonoBehaviour
     [Min(0)]
     float moveTowardsSpeed = 1f;
 
-    bool moveToObject = false;
     Vector3 positionToMoveTo;
+
+    bool moveToObject = false;
 
     private void Update()
     {
@@ -21,12 +22,14 @@ public class FlyAtPlayer : MonoBehaviour
             moveTowardsSpeed * Time.deltaTime
             );
 
+        //Destroy if it's reached it's desination
         if (transform.position == positionToMoveTo)
         {
             Destroy(gameObject);
         }
     }
 
+    //Method to call in the collsion handler
     public void MoveTowardsObject(Vector3 positionToMoveTo)
     {
         moveToObject = true;

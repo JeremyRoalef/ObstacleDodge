@@ -12,11 +12,6 @@ public class Mover : MonoBehaviour
     [Min(0)]
     float zVelocity = 1f;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         MovePlayer();

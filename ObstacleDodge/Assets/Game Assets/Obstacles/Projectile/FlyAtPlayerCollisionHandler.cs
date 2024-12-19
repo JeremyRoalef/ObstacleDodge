@@ -1,5 +1,6 @@
 using UnityEngine;
 
+//Collision handler for objects that fly at the player.
 public class FlyAtPlayerCollisionHandler : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)

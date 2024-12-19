@@ -10,6 +10,7 @@ public class Dropper : MonoBehaviour
 
     private void Awake()
     {
+        //Initialize references
         rb = GetComponent<Rigidbody>();
         rb.useGravity = false;
 
@@ -20,7 +21,6 @@ public class Dropper : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log($"Elapsed Time: {Time.time}");
         if (Time.time >= dropWaitTimer)
         {
             DropObject();
@@ -31,13 +31,5 @@ public class Dropper : MonoBehaviour
     {
         rb.useGravity = true;
         meshRenderer.enabled = true;
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-
-        }
     }
 }
